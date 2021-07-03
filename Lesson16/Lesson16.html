@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .menu{
+            width: 200px;
+            height: 500px;
+            margin: auto;
+        }
+                   
+        .menu ul li{
+                height: 30px;          
+                line-height: 30px;     
+                list-style: none;     
+                padding: 0px 10px;      
+                background: rgb(73, 194, 25);      
+                border-bottom: 1px solid rgb(137, 245, 94);
+                  
+                position: relative;     
+                        }        
+        .menu ul li ul{
+                width: 200px;
+                position: absolute;     
+                top: 1px;          
+                left: 200px;   
+                display: none;
+                     
+            }
+           
+        .menu ul li:hover ul{
+                
+                display: block;
+                background-color: rgb(255, 0, 0);
+            }
+        .menu li:hover {
+                background-color: rgb(64, 241, 93);
+                /* color: white; */
+                
+            }   
+
+        .menu a {
+            text-decoration: none;
+            color: black ;
+        }
+        
+        /* .menu li:hover a {
+            color: rgb(0, 0, 0);
+
+        } */
+        .menu li:hover > a {
+            color: rgb(255, 255, 255);
+
+        }
+        /* .menu li ul  :hover a {
+            color: rgb(255, 255, 255);
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Tin tuc trong ngay</a>
+                <ul>
+                    <li><a href=""> Vắc xin Covid-19.</a></li>
+                    <li><a href=""> Tin Hà Nội.</a></li>
+                    <li><a href=""> Tin TP Hồ Chí Minh.</a></li>
+                    <li><a href=""> Tin Đà Nẵng.</a></li>
+                    <li><a href=""> Tai nạn giao thông.</a></li>
+                    <li><a href=""> Dự báo thời tiết.</a></li>
+                    <li><a href=""> Lịch vạn niên.</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Bong da</a>
+                <ul>
+                    <li><a href=""> Vắc xin Covid-19.</a></li>
+                    <li><a href=""> Tin Hà Nội.</a></li>
+                    <li><a href=""> Tin TP Hồ Chí Minh.</a></li>
+                    <li><a href=""> Tin Đà Nẵng.</a></li>
+                    <li><a href=""> Tai nạn giao thông.</a></li>
+                    <li><a href=""> Dự báo thời tiết.</a></li>
+                    <li><a href=""> Lịch vạn niên.</a></li>
+                </ul>
+            </li>
+            <li><a href="#">The gio</a>i</li>
+            <li><a href="#">Thoi gian</a></li>
+            <li><a href="#">Hi</a></li>
+            <li><a href="#">Hello</a></li>
+        </ul>
+    </div>
+</body>
+</html>
